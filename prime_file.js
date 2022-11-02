@@ -1,17 +1,18 @@
-function checkPrime(num){
-	let fact = 0;
+function checkPrime(number){
+	let factorial = 0;
 	for(let i=1; i<=num; i++){
 		if(num%i==0){
 			fact++;
 		}
 	}
 
-	return fact;
+	return factorial;
 }
 
-let ans = checkPrime(13);
+let number = 13;
+let ans = checkPrime(number);
 if(ans == 2){
-	console.log("Prime");
+	console.log(number,"is a Prime Number");
 }else{
-	console.log("Not Prime");
+	console.log(number,"is Not a Prime Number");
 }

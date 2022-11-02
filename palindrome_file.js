@@ -1,4 +1,4 @@
-function isPalindrome(str){
+function isPalindrome(String){
 	let bag = "";
 	for(let i=str.length-1; i>=0; i--){
 		bag += str[i];
@@ -6,11 +6,11 @@ function isPalindrome(str){
 	return bag;
 }
 
-let string = "naman";
+let String = "naman";
 
-let ans = isPalindrome(string);
-if(ans == string){
-	console.log("Palindrome");
+let ans = isPalindrome(String);
+if(ans == String){
+	console.log(String, "is a Palindrome");
 }else{
-	console.log(Not a Palindrome);
+	console.log(String, "is Not a Palindrome");
 }
